@@ -1,0 +1,42 @@
+<div class="container_main">
+
+
+<div class="container_buttons">
+  <h1>Learn some stuff... <br>with people!</h1>
+  <h3 id="login_button">Log in to play</h3>
+  <h3 id="signup_button">Sign up</h3>
+</div><!--ends container_buttons-->
+
+
+<div class="container_forms"
+  <div id="signup_form" class="formLayout">
+    <form action="/signup" method="post">
+      <% if @signup_error %>
+        <p><%= @signup_error %></p>
+        <% end %>
+      <label for="username">Create a username:</label>
+      <input type="text" name="username" />
+      <br/><br>
+      <label for="password">Create your password:</label>
+      <input type="password" name="password"/>
+      <br/><br>
+      <input type="submit" />
+    </form>
+  </div>
+  <div id="login_form" class="formLayout">
+    <form action="/login" method="post">
+      <% if @login_error %>
+        <p><%= @login_error %></p>
+      <% end %>
+      <label for="username">Username:</label>
+      <input type="text" name="username" />
+      <br/><br>
+      <label for="password">Password:</label>
+      <input type="password" name="password"/>
+      <br/><br>
+      <input type="submit" / >
+    </form>
+  </div>
+</div><!--ends container_forms-->
+
+</div>

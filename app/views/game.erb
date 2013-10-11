@@ -1,0 +1,11 @@
+<div class="container">
+  <h1><%= @deck_name %></h1>
+  QUESTION: <%= @cards[@count].question %>
+  <form action="/check_answer" method="post">
+  <input type="text" name="answer" style="display:none" value= "<%= @cards[@count].answer %>">
+  <input type="text" name="user_answer"> <br/>
+  <input type="text" name="round_id" value= "<%= @round.id %>" style="display:none">
+  <input type="text" name="count" style="display:none" value="<%= @count +=1 %>">
+  <input type="submit" />
+  </form>
+</div>
