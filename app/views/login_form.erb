@@ -10,9 +10,7 @@
 <div class="container_forms"
   <div id="signup_form" class="formLayout">
     <form action="/signup" method="post">
-      <% if @signup_error %>
-        <p><%= @signup_error %></p>
-        <% end %>
+      
       <label for="username">Create a username:</label>
       <input type="text" name="username" id="signup_username"/>
       <br/><br>
@@ -24,9 +22,7 @@
   </div>
   <div id="login_form" class="formLayout">
     <form action="/login" method="post">
-      <% if @login_error %>
-        <p><%= @login_error %></p>
-      <% end %>
+     
       <label for="username">Username:</label>
       <input type="text" name="username" id="login_username"/>
       <br/><br>
@@ -36,6 +32,12 @@
       <input type="submit" / >
     </form>
   </div>
+  <% if @signup_error %>
+    <p class="error"><%= @signup_error %></p>
+  <% end %>
+  <% if @login_error %>
+    <p class="error"><%= @login_error %></p>
+  <% end %>
 </div><!--ends container_forms-->
 
 </div>
@@ -43,9 +45,11 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $('#login_button').on('click', function() {
+      $('.error').hide();
       $('#login_username').focus();
     });
     $('#signup_button').on('click', function() {
+      $('.error').hide();
       $('#signup_username').focus();
     });
   });
