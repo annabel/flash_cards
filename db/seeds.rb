@@ -32,6 +32,12 @@ Card.create(question: "Canada",
 Card.create(question: "Hungary",
             answer: "Budapest",
             deck_id: 1)
+Card.create(question: "Burkina Faso",
+            answer: "Ouagadougou",
+            deck_id: 1)
+Card.create(question: "Romania",
+            answer: "Bucharest",
+            deck_id: 1)
 
 Deck.create(deckname: "Learn Italian with Steve")
 
@@ -73,7 +79,7 @@ Card.create(question: "Buono",
 Deck.create(deckname: "Jane's General Trivia")
 
 Card.create(question: "Which chess piece has the lowest value?",
-            answer: "pawn",
+            answer: "Pawn",
             deck_id: 3)
 Card.create(question: "What is the longest river in the world?",
             answer: "Nile",
@@ -91,16 +97,16 @@ Card.create(question: "What number is represented by the letters XIX in Roman nu
             answer: "19",
             deck_id: 3)
 Card.create(question: "Cirrus or cumulus are examples of what?",
-            answer: "clouds",
+            answer: "Clouds",
             deck_id: 3)
 Card.create(question: "What was the unit of currency in Poland at the time of the second World War?",
-            answer: "zloty",
+            answer: "Zloty",
             deck_id: 3)
-Card.create(question: "What is the third closest major planet to the sun?",
-            answer: "earth",
+Card.create(question: "What is the third closest planet to the sun?",
+            answer: "Earth",
             deck_id: 3)
 Card.create(question: "What is the biggest living fish in the ocean?",
-            answer: "whale shark",
+            answer: "Whale shark",
             deck_id: 3)
 
 

@@ -181,9 +181,10 @@ h1 {
 }
 
 .logout_button {
-  clear: both;
+ 
   padding-top: 80px;
   padding-bottom: 100px;
+  float: right;
 }
 
 a {
@@ -197,12 +198,12 @@ a {
 }
 
 #results_list {
-  float: left;
+  float: right;
   text-align: left;
 }
 
 #decks_list {
-  float: right;
+  float: left;
   font-size: 55px;
   text-align: left;
 }
@@ -223,10 +224,31 @@ a {
   margin-bottom: -30px;
 }
    
-.container_buttons h1 {
-  display: inline;
+
+.person_image_medium {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin: -20px auto;
 }
 
+.pictures_left {
+  float: left;
+  margin-top: -190px;
+}
+
+.pictures_left img {
+  margin-right: 40px;
+}
+
+.pictures_right {
+  float: right;
+  margin-top: -190px;
+}
+
+.pictures_right img {
+  margin-left: 40px;
+}
 
 
 
