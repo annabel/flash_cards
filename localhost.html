@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:9393/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="./localhost_files/css" rel="stylesheet" type="text/css">
+  <!-- 
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="http://localhost:9393/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="http://localhost:9393/css/application.css">
+
+  <script src="./localhost_files/jquery.min.js"></script>
+  <script src="./localhost_files/application.js"></script>
+
+  <title></title>
+</head>
+<body>
+  <div class="container_main">
+
+<div class="container_buttons">
+  <h1>Learn some stuff... <br>with people!</h1>
+  <h3 id="login_button">Log in to play</h3>
+  <h3 id="signup_button">Sign up</h3>
+</div><!--ends container_buttons-->
+
+
+<div class="container_forms" <div="" id="signup_form" style="display: block;">
+    <form action="http://localhost:9393/signup" method="post">
+      
+      <label for="username">Create a username:</label>
+      <input type="text" name="username" id="signup_username">
+      <br><br>
+      <label for="password">Create your password:</label>
+      <input type="password" name="password">
+      <br><br>
+      <input class="submit_buttons" type="submit" value="Submit!">
+    </form>
+  </div>
+  <div id="login_form" class="formLayout" style="display: none;">
+    <form action="http://localhost:9393/login" method="post">
+     
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="login_username">
+      <br><br>
+      <label for="password">Password:</label>
+      <input type="password" name="password">
+      <br><br>
+      <input class="submit_buttons" type="submit" value="Submit!">
+    </form>
+  </div>
+  
+  
+</div><!--ends container_forms-->
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#login_button').on('click', function() {
+      $('.error').hide();
+      $('#login_username').focus();
+    });
+    $('#signup_button').on('click', function() {
+      $('.error').hide();
+      $('#signup_username').focus();
+    });
+  });
+</script>
+
+
+
+</body></html>

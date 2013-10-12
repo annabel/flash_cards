@@ -1,11 +1,25 @@
 <div class="container_main">
-
   <h1>Welcome back, <%= @user.username %>!</h1>
   <div id="decks_list">
     <p>Which deck would you like to play?</p>
     <% @deck.each do |x| %>
-    <a href='/game/<%= x.id %>'><%= x.deckname %></a>
-    <br/>
+      <% if x.deckname.downcase.include?('annabel')
+           image = 'https://0.gravatar.com/avatar/547d767b841396bb6b7679cd4b4a9cb0?d=https%3A%2F%2Fidenticons.github.com%2F696eaf1cdebe198fd677fdb9dffbb632.png&s=440'
+         elsif x.deckname.downcase.include?('steve')
+           image = 'https://2.gravatar.com/avatar/3fde2c7a380d3d59df18950f6f319e89?d=https%3A%2F%2Fidenticons.github.com%2F3856c3e3b0b7700736226e4130258099.png&s=440'
+         elsif x.deckname.downcase.include?('alex')
+           image = 'https://0.gravatar.com/avatar/033d8bb578303f85b9297acd10ab8320?d=https%3A%2F%2Fidenticons.github.com%2F623a06a56f5f578245ec61ae0db3a165.png&s=440'
+         elsif x.deckname.downcase.include?('jane')
+           image = 'https://1.gravatar.com/avatar/7c1e13bec11dc3186b42820c76e09935?d=https%3A%2F%2Fidenticons.github.com%2Fc3012da025f8c9e87286214eab4373b0.png&s=440'
+         else
+           image = nil
+         end %>
+      <p><a href='/game/<%= x.id %>'>
+        <% if image %>
+             <img class="person_image" src="<%= image %>"/>
+        <% end %>
+        <%= x.deckname %>
+      </a></p>
     <% end %>
   </div>
   <div id="results_list">
@@ -13,8 +27,10 @@
     <br><br>
       <span>Results: </span><br>
       <% @results.each do |x| %>
-        <% percent = (((x.guesses.where(:correct => 1).count).to_f) / (x.guesses.count).to_f * 100).round(0) %>
-      <span><%= x.deck.deckname %>: <%= percent %>%</span>
+        <% if x.guesses.count > 0 %>
+          <% percent = (((x.guesses.where(:correct => 1).count).to_f) / (x.guesses.count).to_f * 100).round(0) %>
+          <span><%= x.deck.deckname %>: <%= percent %>%</span>
+        <% end %>
       <% end %>
     <% end %>
   </div>

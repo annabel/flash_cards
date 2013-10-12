@@ -134,9 +134,56 @@ h1 {
   top:1px;
 }
 
+.submit_buttons {
+  -moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+  box-shadow:inset 0px 1px 0px 0px #caefab;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+  background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+  background-color:#77d42a;
+  -webkit-border-top-left-radius:20px;
+  -moz-border-radius-topleft:20px;
+  border-top-left-radius:20px;
+  -webkit-border-top-right-radius:20px;
+  -moz-border-radius-topright:20px;
+  border-top-right-radius:20px;
+  -webkit-border-bottom-right-radius:20px;
+  -moz-border-radius-bottomright:20px;
+  border-bottom-right-radius:20px;
+  -webkit-border-bottom-left-radius:20px;
+  -moz-border-radius-bottomleft:20px;
+  border-bottom-left-radius:20px;
+  text-indent:0;
+  border:1px solid #268a16;
+  display:inline-block;
+  color:#306108;
+  font-family:'Bigelow Rules', cursive;
+  font-size:40px;
+  font-weight:bold;
+  font-style:normal;
+  height:100px;
+  line-height:100px;
+  width:170px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #aade7c;
+}
+.submit_buttons:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+  background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+  background-color:#5cb811;
+}
+.submit_buttons:active {
+  position:relative;
+  top:1px;
+}
+
 .logout_button {
   clear: both;
-  padding-top: 200px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 a {
@@ -160,8 +207,25 @@ a {
   text-align: left;
 }
 
+.person_image {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  margin-bottom: -15px;
+}
+.person_image_big {
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  margin: -20px auto;
+}
+.question_heading {
+  margin-bottom: -30px;
+}
    
-
+.container_buttons h1 {
+  display: inline;
+}
 
 
 
