@@ -1,5 +1,5 @@
 #Annabel's capitals of the world
-Deck.create(deckname: "Annabel's World Capitals!")
+Deck.create(deckname: "Annabel's World Capitals")
 
 Card.create(question: "Belarus",
             answer: "Minsk",
@@ -33,7 +33,7 @@ Card.create(question: "Hungary",
             answer: "Budapest",
             deck_id: 1)
 
-Deck.create(deckname: "Learn Italian with Steve!")
+Deck.create(deckname: "Learn Italian with Steve")
 
 Card.create(question: "Grazie",
              answer: "Thank you",
@@ -70,65 +70,64 @@ Card.create(question: "Buono",
              deck_id: 2)
 
 
-Deck.create(deckname: "Math with Alex!")
-
-Card.create(question: "2 + 2",
-             answer: "4",
-             deck_id: 3)
-Card.create(question: "15 / 3",
-             answer: "5",
-             deck_id: 3)
-Card.create(question: "2 * 8",
-             answer: "16",
-             deck_id: 3)
-Card.create(question: "4 + 2",
-             answer: "6",
-             deck_id: 3)
-Card.create(question: "81 / 9",
-             answer: "9",
-             deck_id: 3)
-Card.create(question: "3^3",
-             answer: "27",
-             deck_id: 3)
-
-Deck.create(deckname: "General Trivia with Jane!")
+Deck.create(deckname: "Jane's General Trivia")
 
 Card.create(question: "Which chess piece has the lowest value?",
             answer: "pawn",
-            deck_id: 4)
-
+            deck_id: 3)
 Card.create(question: "What is the longest river in the world?",
             answer: "Nile",
-            deck_id: 4)
-
+            deck_id: 3)
 Card.create(question: "Who was the first man on the moon?",
             answer: "Neil Armstrong",
-            deck_id: 4)
-
+            deck_id: 3)
 Card.create(question: "Name of the Greek goddess associated with the moon?",
             answer: "Artemis",
-            deck_id: 4)
-
+            deck_id: 3)
 Card.create(question: "Son of Kanga in the works of Alan Alexander Milne",
             answer: "Roo",
-            deck_id: 4)
-
+            deck_id: 3)
 Card.create(question: "What number is represented by the letters XIX in Roman numerals?",
             answer: "19",
-            deck_id: 4)
-
+            deck_id: 3)
 Card.create(question: "Cirrus or cumulus are examples of what?",
             answer: "clouds",
-            deck_id: 4)
-
+            deck_id: 3)
 Card.create(question: "What was the unit of currency in Poland at the time of the second World War?",
             answer: "zloty",
-            deck_id: 4)
-
+            deck_id: 3)
 Card.create(question: "What is the third closest major planet to the sun?",
             answer: "earth",
-            deck_id: 4)
-
+            deck_id: 3)
 Card.create(question: "What is the biggest living fish in the ocean?",
             answer: "whale shark",
-            deck_id: 4)
+            deck_id: 3)
+
+
+Deck.create(deckname: "Math with Alex")
+
+Card.create(question: "2 + 2",
+             answer: "4",
+             deck_id: 4)
+Card.create(question: "15 / 3",
+             answer: "5",
+             deck_id: 4)
+Card.create(question: "2 * 8",
+             answer: "16",
+             deck_id: 4)
+Card.create(question: "4 + 2",
+             answer: "6",
+             deck_id: 4)
+Card.create(question: "81 / 9",
+             answer: "9",
+             deck_id: 4)
+Card.create(question: "3^3",
+             answer: "27",
+             deck_id: 4)
+
+
+
+
+
+
+

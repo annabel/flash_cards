@@ -1,9 +1,22 @@
 <div class="container_main">
 
   <h1>Welcome back, <%= @user.username %>!</h1>
-  <% @deck.each do |x| %>
-  <a href='/game/<%= x.id %>'><%= x.deckname %></a>
-  <br/>
-  <% end %>
+  <div id="decks_list">
+    <p>Which deck would you like to play?</p>
+    <% @deck.each do |x| %>
+    <a href='/game/<%= x.id %>'><%= x.deckname %></a>
+    <br/>
+    <% end %>
+  </div>
+  <div id="results_list">
+    <% if @results && @results.length > 0 %>
+    <br><br>
+      <span>Results: </span><br>
+      <% @results.each do |x| %>
+        <% percent = (((x.guesses.where(:correct => 1).count).to_f) / (x.guesses.count).to_f * 100).round(0) %>
+      <span><%= x.deck.deckname %>: <%= percent %>%</span>
+      <% end %>
+    <% end %>
+  </div>
   <div class="logout_button"><a href="/logout">Logout</a></div>
 </div>

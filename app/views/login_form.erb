@@ -1,6 +1,5 @@
 <div class="container_main">
 
-
 <div class="container_buttons">
   <h1>Learn some stuff... <br>with people!</h1>
   <h3 id="login_button">Log in to play</h3>
@@ -15,7 +14,7 @@
         <p><%= @signup_error %></p>
         <% end %>
       <label for="username">Create a username:</label>
-      <input type="text" name="username" />
+      <input type="text" name="username" id="signup_username"/>
       <br/><br>
       <label for="password">Create your password:</label>
       <input type="password" name="password"/>
@@ -29,7 +28,7 @@
         <p><%= @login_error %></p>
       <% end %>
       <label for="username">Username:</label>
-      <input type="text" name="username" />
+      <input type="text" name="username" id="login_username"/>
       <br/><br>
       <label for="password">Password:</label>
       <input type="password" name="password"/>
@@ -40,3 +39,14 @@
 </div><!--ends container_forms-->
 
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#login_button').on('click', function() {
+      $('#login_username').focus();
+    });
+    $('#signup_button').on('click', function() {
+      $('#signup_username').focus();
+    });
+  });
+</script>
