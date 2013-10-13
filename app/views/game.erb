@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container_main">
   <h1><%= @deck.deckname %></h1>
   <% if @deck.deckname.downcase.include?('annabel')
        image = 'https://0.gravatar.com/avatar/547d767b841396bb6b7679cd4b4a9cb0?d=https%3A%2F%2Fidenticons.github.com%2F696eaf1cdebe198fd677fdb9dffbb632.png&s=440'
@@ -11,7 +11,9 @@
      else
        image = nil
      end %>
-  <img class="person_image_big"src="<%= image %>" />
+  <% if image %>
+    <img class="person_image_big"src="<%= image %>" />
+  <% end %>
   <p><%= @message %></p>
   <p class="question_heading">QUESTION: <%= @cards[@count].question %></p>
   <form action="/check_answer" method="post">

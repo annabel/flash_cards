@@ -1,0 +1,22 @@
+<div class="container_main">
+
+<form action="/editdeck/<%= @deck.id %>" method="post" autocomplete="off">
+  <% if @deck_error %>
+   <p> <%= @deck_error %> </p>
+  <% end %>
+  <label for="editdeck_name">Deck name:</label>
+  <input type="text" name="deckname" id="editdeck_name" value="<%= @deck.deckname if @deck %>"/>
+  <br/><br>
+  <% count = 1 %>
+  <% @deck.cards.each do |card| %>
+    <label for="createcard_question">Question:</label>
+    <input type="createcard_question" name="question<%= count %>" id="createcard_question" value="<%= card.question %>"/>
+    <label for="createcard_answer">Answer:</label>
+    <input type="createcard_answer" name="answer<%= count %>" id="createcard_answer" value="<%= card.answer %>"/>
+    <br/><br>
+    <% count += 1 %>
+  <% end %>
+  <input class="submit_buttons" type="submit" name="deck_action" value="Finished"/>
+</form>
+
+</div>
