@@ -4,7 +4,6 @@ Deck.create(deckname: "Annabel's World Capitals")
 Card.create(question: "Belarus",
             answer: "Minsk",
             deck_id: 1)
-
 Card.create(question: "Turkey",
             answer: "Ankara",
             deck_id: 1)
@@ -37,6 +36,30 @@ Card.create(question: "Burkina Faso",
             deck_id: 1)
 Card.create(question: "Romania",
             answer: "Bucharest",
+            deck_id: 1)
+Card.create(question: "India",
+            answer: "New Delhi",
+            deck_id: 1)
+Card.create(question: "Serbia",
+            answer: "Belgrade",
+            deck_id: 1)
+Card.create(question: "Sweden",
+            answer: "Stockholm",
+            deck_id: 1)
+Card.create(question: "USA",
+            answer: "Washington, D.C.",
+            deck_id: 1)
+Card.create(question: "Oman",
+            answer: "Muscat",
+            deck_id: 1)
+Card.create(question: "Iceland",
+            answer: "Reykjavik",
+            deck_id: 1)
+Card.create(question: "Albania",
+            answer: "Tirana",
+            deck_id: 1)
+Card.create(question: "Ghana",
+            answer: "Accra",
             deck_id: 1)
 
 Deck.create(deckname: "Learn Italian with Steve")
@@ -87,10 +110,10 @@ Card.create(question: "What is the longest river in the world?",
 Card.create(question: "Who was the first man on the moon?",
             answer: "Neil Armstrong",
             deck_id: 3)
-Card.create(question: "Name of the Greek goddess associated with the moon?",
+Card.create(question: "What is the name of the Greek goddess associated with the moon?",
             answer: "Artemis",
             deck_id: 3)
-Card.create(question: "Son of Kanga in the works of Alan Alexander Milne",
+Card.create(question: "Who is the son of Kanga in the works of Alan Alexander Milne",
             answer: "Roo",
             deck_id: 3)
 Card.create(question: "What number is represented by the letters XIX in Roman numerals?",
@@ -130,6 +153,25 @@ Card.create(question: "81 / 9",
 Card.create(question: "3^3",
              answer: "27",
              deck_id: 4)
+Card.create(question: "25 / 5",
+             answer: "5",
+             deck_id: 4)
+Card.create(question: "16 / 4",
+             answer: "4",
+             deck_id: 4)
+Card.create(question: "100 * 8",
+             answer: "800",
+             deck_id: 4)
+Card.create(question: "3 + 3",
+             answer: "6",
+             deck_id: 4)
+Card.create(question: "12 * 3",
+             answer: "36",
+             deck_id: 4)
+Card.create(question: "100 / 10",
+             answer: "10",
+             deck_id: 4)
+
 
 
 

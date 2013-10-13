@@ -58,7 +58,7 @@ post '/check_answer' do
     @message = "Correct!"
   else
     Guess.create(round_id: @round_id, correct: 0)
-    @message = "You're stupid! The answer was #{@answer.capitalize}. Idiot. Try this new question:"
+    @message = "You're stupid! The answer was, of course, #{@answer.capitalize}. Idiot. Try this new question:"
   end
   @count = params[:count].to_i
   if @count >= @round.deck.cards.length
@@ -128,6 +128,10 @@ post '/editdeck/:id' do
     @count += 1
   end
   redirect '/'
+end
+
+get '/welcome' do
+  redirect to '/'
 end
 
 

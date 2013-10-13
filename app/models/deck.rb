@@ -4,3 +4,5 @@ class Deck < ActiveRecord::Base
   validates :deckname, presence: true
   validates_uniqueness_of :deckname
 end
+
+# <% if @deck && @deck.deckname != ''; %>disabled="disabled" <% end %>/>

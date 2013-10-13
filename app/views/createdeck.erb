@@ -1,12 +1,13 @@
 <div class="container_main">
-
+<h1>Create a new deck!</h1>
+<div class="create_decks">
 <form action="/createdeck" method="post" autocomplete="off">
   <% if @deck_error %>
    <p> <%= @deck_error %> </p>
   <% end %>
   <label for="createdeck_name">Name yo' deck:</label>
-  <input type="text" name="deckname" id="createdeck_name" value="<%= unless @deck == nil || @deck.deckname == ''; @deck.deckname; end %>" <% if @deck && @deck.deckname != ''; %>disabled="disabled" <% end %>/>
-  <br/><br>
+  <input type="text" name="deckname" id="createdeck_name" value="<%= unless @deck == nil || @deck.deckname == ''; @deck.deckname; end %>"
+  <br/><br><br><br>
   <label for="createcard_question">Question:</label>
   <input type="createcard_question" name="question" id="createcard_question"/>
   <br/><br>
@@ -16,5 +17,5 @@
   <input class="submit_buttons" type="submit" name="deck_action" value="Finish deck"/>
   <input class="submit_buttons" type="submit" name="deck_action" value="Create another" />
 </form>
-
+</div>
 </div>

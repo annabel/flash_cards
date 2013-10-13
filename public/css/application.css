@@ -155,7 +155,7 @@ h1 {
   display:inline-block;
   color:#306108;
   font-family:'Bigelow Rules', cursive;
-  font-size:40px;
+  font-size:35px;
   font-weight:bold;
   font-style:normal;
   height:100px;
@@ -180,12 +180,12 @@ h1 {
   clear: both;
   float: right;
   margin-bottom: 100px;
-  margin-top: -100px;
+  margin-top: -110px;
 }
 
 .logout_button a {
   margin-bottom: 500px;
-
+  font-size: 60px
 }
 
 a {
@@ -207,7 +207,7 @@ a {
   margin-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
  
 }
 
@@ -275,11 +275,15 @@ a {
   line-height: 65px;
 }
 
-.create_deck {
-  clear:both;
+p.create_deck {
   float:right;
 }
-
+p.quit_game {
+  margin-top: 100px;
+}
+.create_decks{
+  margin-top: 100px;
+}
 
 
 

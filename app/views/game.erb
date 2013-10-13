@@ -15,14 +15,15 @@
     <img class="person_image_big"src="<%= image %>" />
   <% end %>
   <p><%= @message %></p>
-  <p class="question_heading">QUESTION: <%= @cards[@count].question %></p>
+  <p class="question_heading"> <%= @cards[@count].question %></p>
   <form action="/check_answer" method="post">
   <input type="text" name="answer" style="display:none" value= "<%= @cards[@count].answer %>"><br>
-  <input type="text" name="user_answer" id="user_answer"> <br/>
+  <input type="text" name="user_answer" id="user_answer"> <br/><br>
   <input type="text" name="round_id" value= "<%= @round.id %>" style="display:none">
   <input type="text" name="count" style="display:none" value="<%= @count +=1 %>"><br>
   <input class="submit_buttons" type="submit" value="Submit!"/>
   </form>
+  <p class="quit_game"><a href='/welcome'>Quit Game</a></p>
 </div>
 <script type="text/javascript">
   $(document).ready(function(){
