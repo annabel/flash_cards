@@ -24,7 +24,7 @@ post '/login' do
       session[:user_id] = @user.id
       redirect to ('/')
     else
-      @login_error = "Incorrect password for this user: I've got a $5 footlong with your name on it!"
+      @login_error = "Incorrect password for this user: so are you co-opting these wings?"
       erb :login_form
     end
   else
@@ -37,6 +37,7 @@ post '/signup' do
   @user = User.create(username: params[:username], password: params[:password])
   if @user.valid?
     if @user.username == "henry" || @user.username == "Henry"
+      session[:user_id] = @user.id
       erb :rickroll
     else
       session[:user_id] = @user.id
@@ -58,7 +59,7 @@ post '/check_answer' do
     @message = "Correct!"
   else
     Guess.create(round_id: @round_id, correct: 0)
-    @message = "You're stupid! The answer was, of course, #{@answer.capitalize}. Idiot. Try this new question:"
+    @message = "You're stupid! The answer was, #{@answer}. Idiot. Try this new question:"
   end
   @count = params[:count].to_i
   if @count >= @round.deck.cards.length
@@ -128,10 +129,6 @@ post '/editdeck/:id' do
     @count += 1
   end
   redirect '/'
-end
-
-get '/welcome' do
-  redirect to '/'
 end
 
 

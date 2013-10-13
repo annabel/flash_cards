@@ -6,8 +6,8 @@
    <p> <%= @deck_error %> </p>
   <% end %>
   <label for="createdeck_name">Name yo' deck:</label>
-  <input type="text" name="deckname" id="createdeck_name" value="<%= unless @deck == nil || @deck.deckname == ''; @deck.deckname; end %>"
-  <br/><br><br><br>
+  <input type="text" name="deckname" id="createdeck_name" value="<%= unless @deck == nil || @deck.deckname == ''; @deck.deckname; end %>">
+  <br/><br><br>
   <label for="createcard_question">Question:</label>
   <input type="createcard_question" name="question" id="createcard_question"/>
   <br/><br>
@@ -18,4 +18,5 @@
   <input class="submit_buttons" type="submit" name="deck_action" value="Create another" />
 </form>
 </div>
+ <p class="quit_game"><a href='/'>Go back</a></p>
 </div>

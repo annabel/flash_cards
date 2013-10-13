@@ -22,14 +22,13 @@
         <% if image %>
              <img class="person_image" src="<%= image %>"/>
         <% end %>
-        <%= x.deckname[0..25] %>
+        <%= x.deckname %>
       </a>
       <% if x.id > 4 %>
        <a class="edit_delete" href='editdeck/<%= x.id %>'>Edit </a><a class="edit_delete" href='deletedeck/<%= x.id %>'>Delete</a>
       <% end %>
       </p>
     <% end %>
-   
   </div>
   <div id="results_list">
     <span class="your_results">Your results:</span><br>

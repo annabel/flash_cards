@@ -204,15 +204,11 @@ a {
   border: 8px dotted white;
   width: 250px;
   font-size: 35px;
-  margin-top: 50px;
+  margin-top: 60px;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
- 
-}
-
-#results_list span {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .your_results {
@@ -243,9 +239,9 @@ a {
 }
    
 .person_image_medium {
-  height: 100px;
-  width: 100px;
-  border-radius: 100px;
+  height: 115px;
+  width: 115px;
+  border-radius: 115px;
   margin: -20px auto;
 }
 
@@ -285,7 +281,16 @@ p.quit_game {
   margin-top: 100px;
 }
 
+#hankaconda img {
+  height: 200px;
+  width: 300px;
+  border-radius: 250px;
+  margin-bottom: 30px;
+}
 
+#rickroll {
+  text-align: center;
+}
 
 
 
