@@ -24,7 +24,7 @@ post '/login' do
       session[:user_id] = @user.id
       redirect to ('/')
     else
-      @login_error = "Incorrect password for this user: so are you co-opting these wings?"
+      @login_error = "Incorrect password for this user: are you co-opting these wings?"
       erb :login_form
     end
   else
